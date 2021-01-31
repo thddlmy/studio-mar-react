@@ -1,12 +1,13 @@
 import * as React from 'react';
 import '../assets/App.css';
-import * as API from '../api'
+import * as API from '../api';
+import NameBar from './NameBar';
 
 class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      name: 'junsoo',
+      name: 'songyi',
       posts: []
     }
   }
@@ -23,11 +24,12 @@ class App extends React.Component {
   render(){
     return (
       <div className="main">
-        <div className="post-list"></div>
+        {/*<div className="post-list"></div>
         <div className="post-body">
           <p>Title</p>
           <p>Content {this.state.name}</p>
-        </div>
+        </div>*/}
+        <NameBar />
       </div>
     );
   }
